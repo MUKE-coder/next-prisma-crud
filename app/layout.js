@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar";
 import "../styles/main.scss";
 import { Inter } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
+import {ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+      <ToastContainer/>
         <Navbar />
         <div className="flex">
           <div className="w-2/12">
