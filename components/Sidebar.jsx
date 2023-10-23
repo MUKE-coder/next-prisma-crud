@@ -5,7 +5,7 @@ import { BiArchiveIn, BiTrash } from "react-icons/bi";
 import { usePathname } from "next/navigation";
 export default function Sidebar() {
   const pathname = usePathname();
-  console.log(pathname);
+  // console.log(pathname);
   if (pathname === "/") return null;
   return (
     <div className="flex flex-col gap-3 py-4 px-4">
